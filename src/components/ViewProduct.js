@@ -1,13 +1,12 @@
-import "../components/Styles/ProductInfo.css";
 import { Link } from "react-router-dom";
 import { useParams } from 'react-router-dom';
 import UseFetch from './UseFetch';
 
-
-const ProductInfo = () => {
+const ViewProduct = () => {
 
 const { id } = useParams();
 const { data: product, loading } = UseFetch( 'http://localhost:8000/posts/' + id )
+
 
     return ( 
         <div className="product-detail-page">
@@ -15,7 +14,7 @@ const { data: product, loading } = UseFetch( 'http://localhost:8000/posts/' + id
         { loading && <div>Loading</div> }
         { product && (
             <article>
-                <h1 className="header-details">Produktinformation</h1>
+                <h1 className="header-details">Vald produkt</h1>
 
               
                 <div className="product-detail">
@@ -25,7 +24,7 @@ const { data: product, loading } = UseFetch( 'http://localhost:8000/posts/' + id
 
                 
                 <div className="product-detail">
-                <h2>Kvantité</h2>
+                <h2>Kvantitet</h2>
                 <input readonly type="text" className="product-quantity" value={`${ product.quantity }`}/>
                 </div>
 
@@ -36,39 +35,18 @@ const { data: product, loading } = UseFetch( 'http://localhost:8000/posts/' + id
                 </div>
 
             
-                <div className="product-detail">
-                <h2>Beskrivning</h2>
-                <input readonly type="text" className="product-description" value={`${ product.description }`}/>
                 
-                </div>
-
-               
-                <div className="card-image-div">
-              <img className="card-image-2" key={product.image} src={product.image} alt="bild"/>
-             </div>
-
-            <div className="product-detail">
-                <h2>Plats för upphämtning</h2>
-                <input readonly type="text" className="product-place" value={`${ product.place }`}/>
-
-            </div>
 
             <div className="product-detail">
 
                 <h2>Telefon</h2>
                 <input readonly type="text" className="product-phone" value={`${ product.phone }`}/>
             </div>
-
-               <div className="buttons">
-                <Link to={`/ViewProduct/${product.id}`} className="back-button">
-              Köp produkt
+ <div className="buttons">
+                <Link to={`/Receipt/${product.id}`} className="back-button">
+              Bekräfta
             </Link>
-
-            <Link to="/BuyProducts" className="back-button">
-              Gå tillbaka
-            </Link>
-            
-          </div>
+            </div>
         
             </article>
 
@@ -80,4 +58,4 @@ const { data: product, loading } = UseFetch( 'http://localhost:8000/posts/' + id
      );
 }
  
-export default ProductInfo;
+export default ViewProduct;

@@ -29,7 +29,7 @@ const LandingPage = () => {
             <Link to="/BuyProducts" className="buy-button">
               Köp
             </Link>
-            <Link to="/SellProduct" className="sell-button">
+            <Link to="/SellProducts" className="sell-button">
               Sälj
             </Link>
           </div>

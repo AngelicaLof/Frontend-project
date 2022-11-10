@@ -1,7 +1,51 @@
 import "../components/Styles/BuyProducts.css";
-import { Link } from "react-router-dom";
+/*import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";*/
+
+import Products from './Products';
+import UseFetch from './UseFetch';
 
 const BuyProducts = () => {
+const { data: posts, loading } = UseFetch('http://localhost:8000/posts');
+
+
+
+// putting out the value that was fetched with useFetch
+    return ( 
+        <div className="buy-products-page">
+
+        { loading && <div>Loading page...</div> }
+         { posts && <Products posts={posts}  />}
+        
+        </div>
+     );
+}
+ 
+export default BuyProducts;
+
+
+
+
+
+
+
+
+
+/*
+const BuyProducts = () => {
+  const [posts, setPosts] = useState(null);
+
+  useEffect(()  => {
+    fetch("http://localhost:8000/posts")
+    .then(res => {
+     return res.json()
+    })
+    .then( data => {
+console.log(data);
+setPosts(data)
+    })
+  }, []);
+
     return ( 
         <div className="buy-products-page">
            <div className="header"><h1>Köp produkter</h1></div>
@@ -135,4 +179,4 @@ const BuyProducts = () => {
      );
 }
  
-export default BuyProducts;
+export default BuyProducts;*/

@@ -1,0 +1,64 @@
+{
+  "posts": [
+    {
+      "product": "Potatis",
+      "quantity": "100 kg",
+      "price": "1 kr/kg",
+      "description": "Överbliven skörd",
+      "image": "https://mina-kvadrat.gar-bo.se/wp-content/uploads/2020/04/AdobeStock_294254993-1024x647.jpeg",
+      "place": "Liljeholmen",
+      "phone": "0704567343",
+      "id": 1
+    },
+    {
+      "product": "Morötter",
+      "quantity": "50 kg",
+      "price": "2 kr/kg",
+      "description": "Överbliven skörd",
+      "image": "https://odlingsguiden.se/wp-content/uploads/2017/06/morotter.jpg",
+      "place": "Farsta",
+      "phone": "0704567343",
+      "id": 2
+    },
+    {
+      "product": "Äpplen",
+      "quantity": "50 kg",
+      "price": "2 kr/kg",
+      "description": "Överbliven skörd",
+      "image": "https://images-bonnier.imgix.net/files/ifo/production/20210428213518/istock-155375750-9po7y_rXYeAWdrzIvP9S4A.jpg?auto=format&w=1024&q=60&fit=fill&crop=focalpoint&ar=1:2%201024w",
+      "place": "Farsta",
+      "phone": "0704567343",
+      "id": 3
+    },
+    {
+      "product": "Blomkål",
+      "quantity": "70 kg",
+      "price": "3 kr/kg",
+      "description": "Överbliven skörd",
+      "image": "https://imengine2.lrf.infomaker.io/?uuid=b1e8f80b-fc61-48a6-900c-d888c999761c&type=preview&source=&function=cropresize&width=630&height=434&q=80&x=0&y=0&crop_w=1680&crop_h=1200&z=2&name=blomkal-jpg",
+      "place": "Farsta",
+      "phone": "0704567343",
+      "id": 4
+    },
+    {
+      "product": "Rödbetor",
+      "quantity": "50 kg",
+      "price": "2 kr/kg",
+      "description": "Överbliven skörd",
+      "image": "https://www.cervera.se/link/5d7e1d8d77c843fda3d3ce3aa98d8b5c.aspx",
+      "place": "Farsta",
+      "phone": "0704567343",
+      "id": 5
+    },
+    {
+      "product": "Gul lök",
+      "quantity": "60 kg",
+      "price": "3 kr/kg",
+      "description": "Överbliven skörd",
+      "image": "https://fransverige.se/wp-content/uploads/2021/09/Gullo%CC%88k_inla%CC%88gg_1260x860-kopiera.jpg",
+      "place": "Farsta",
+      "phone": "0704567343",
+      "id": 6
+    }
+  ]
+}
