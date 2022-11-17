@@ -1,4 +1,12 @@
-.product-details-page {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.sell-page {
+background-color: #d8f3dc;
+font-family: 'Roboto', sans-serif;
+}
+
+
+.sell-product {
     background-color: #d8f3dc;
     box-sizing: border-box;
     text-align: center;
@@ -6,7 +14,96 @@
     padding: 0;
 }
 
-.pro-article {
-    margin: 0;
-    padding: 0;
+
+
+.inputfield-product {
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 6px;
+    text-align: center;
+    box-shadow: 0px 2px 3px grey;
+}
+
+.inputfield-quantity {
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 6px;
+    text-align: center;
+    width: 10rem;
+    box-shadow: 0px 2px 3px grey;
+}
+
+.inputfield-price {
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 6px;
+    text-align: center;
+    width: 10rem;
+    box-shadow: 0px 2px 3px grey;
+}
+
+.input-area {
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 6px;
+    text-align: center;
+    box-shadow: 0px 2px 3px grey;
+}
+
+.inputfield-place {
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 6px;
+    text-align: center;
+    box-shadow: 0px 2px 3px grey;
+}
+
+.inputfield-number {
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 6px;
+    text-align: center;
+    box-shadow: 0px 2px 3px grey;
+}
+
+
+
+.inputfield-image {
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+        padding: 6px;
+        text-align: center;
+        box-shadow: 0px 2px 3px grey;
+
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.publish-button {
+    background-color: #15b097;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    padding: 7px;
+    width: 17rem;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+
 }

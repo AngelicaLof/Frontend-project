@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
+.confirmed-page {
+    background-color: #d8f3dc;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.confirmed-page-tree {
+    position: center;
+    width: 270px;
+    height: 290px;
+    left: 44px;
+    top: 335px;
+    margin: 20px;
+    
+}
+
+
+.buttons-confirmed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-button-confirmed {
+    background-color: #15b097;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 7px;
+    padding: 7px;
+    width: 16rem;
+    border-radius: 12px;
+    border: none;
+
+}

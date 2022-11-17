@@ -7,8 +7,9 @@ const Navbar = () => {
     return ( 
 
         <div className="navbar">
-            <span className="nav-logo">TastetheWaste</span>
-
+            <div className="nav-logo">
+            <a href="/">TasteTheWaste</a>
+</div>
         <div className={`nav-items ${isOpen && "open"}`}>
            <a href="/buyproducts">KÖP</a>
            <a href="/sellproducts">SÄLJ</a>

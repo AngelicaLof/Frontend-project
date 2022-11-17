@@ -2,124 +2,103 @@
 
 
 
-.product-detail-page {
+.product-detail-page- {
     background-color: #d8f3dc;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
-.pro-article {
+.pro-article- {
+    width: 32rem;
     margin: 20px;
     padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
 }
 
 
-.header-details {
+.header-details- {
     margin: 20px;
     padding: 10px;
     font-size: 35px;
 }
 
 
-.product-type {
+.product-type- {
     font-size: 20px;
     border: none;
     border-radius: 10px;
     padding: 6px;
     text-align: center;
-    box-shadow: 0px 2px 3px grey;
+  
 }
 
-.product-quantity {
-    font-size: 20px;
-    border: none;
-    border-radius: 10px;
-    padding: 6px;
-    text-align: center;
-    width: 10rem;
-    box-shadow: 0px 2px 3px grey;
-}
-
-.product-price {
+.product-quantity- {
     font-size: 20px;
     border: none;
     border-radius: 10px;
     padding: 6px;
     text-align: center;
     width: 10rem;
-    box-shadow: 0px 2px 3px grey;
+    
 }
 
-.product-description {
+.product-price- {
     font-size: 20px;
     border: none;
     border-radius: 10px;
     padding: 6px;
     text-align: center;
-    box-shadow: 0px 2px 3px grey;
+    width: 10rem;
+    
 }
 
-.product-place {
+.product-description- {
     font-size: 20px;
     border: none;
     border-radius: 10px;
     padding: 6px;
     text-align: center;
-    box-shadow: 0px 2px 3px grey;
+    
 }
 
-.product-phone {
+.product-place- {
     font-size: 20px;
     border: none;
     border-radius: 10px;
     padding: 6px;
     text-align: center;
-    box-shadow: 0px 2px 3px grey;
+    
+}
+
+.product-number {
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 6px;
+    text-align: center;
+    
 }
 
 
-
-.card-image-2 {
-    margin: 15px;
-    margin-top: 20px;
-    width: 20.7rem;
-    height: 15rem;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-
-
-}
-
-.buttons {
+.buttons- {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.back-button {
+.back-button- {
     background-color: #15b097;
     color: white;
     text-decoration: none;
     font-size: 20px;
-    margin: 10px;
-    padding: 7px;
-    width: 16rem;
-    border-radius: 12px;
-    border: none;
-    
-}
-
-.buy1-button {
-    background-color: #15b097;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    margin: 10px;
+    margin: 7px;
     padding: 7px;
     width: 16rem;
     border-radius: 12px;
     border: none;
 
 }
+

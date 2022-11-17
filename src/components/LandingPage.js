@@ -5,9 +5,11 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <div className="landing-page-container">
+
         <div>
           <h1>Taste The Waste</h1>
         </div>
+
         <div>
           <h2>Din handelsplats för att minimera matsvinnet</h2>
         </div>
@@ -17,6 +19,7 @@ const LandingPage = () => {
             till ett förmånligt pris. Bra för miljön och din plånbok.
           </p>
         </div>
+        
         <div className="tree-container">
           <img
             className="landing-page-tree"

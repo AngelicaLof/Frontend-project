@@ -5,11 +5,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #513c2c;
+    background: #15b097;
     font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
 }
 
-.navbar > .nav-logo {
+.navbar > .nav-logo > a {
+    text-decoration: none;
     font-weight: 700;
     font-size: 21px;
     margin: 15px;
@@ -19,6 +21,7 @@
 .navbar > .nav-items > a {
     color: rgb(243, 247, 244);
     font-size: 16px;
+    font-weight: 600;
     text-decoration: none;
     margin: 15px;
     position:relative;
@@ -60,11 +63,12 @@
 
 .navbar > .nav-items {
     position: absolute;
+    border-radius: 5px;
     margin: 10px;
     top: 60px;
     display: flex;
     flex-direction: column;
-    background: #513c2c;
+    background: #15b097;
     left: 0;
     width: 96%;
     height: 96%;

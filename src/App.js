@@ -6,7 +6,7 @@ import ProductInfo from "./components/ProductInfo";
 import SellProducts from "./components/SellProducts";
 import Navbar from "./components/Navbar";
 import ViewProduct from "./components/ViewProduct";
-import Receipt from "./components/Receipt";
+import Confirmed from "./components/Confirmed";
 
 
 
@@ -24,7 +24,7 @@ function App() {
           <Route path="/productinfo/:id" element={<ProductInfo />} />
           <Route path="/sellproducts" element={<SellProducts />} />
           <Route path="/viewproduct/:id" element={<ViewProduct />} />
-           <Route path="/receipt/:id" element={<Receipt />} />
+           <Route path="/confirmed" element={<Confirmed />} />
         
         </Routes>
       </Router>

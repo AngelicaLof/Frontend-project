@@ -18,7 +18,7 @@ const navigate = useNavigate();
 const handleSubmit = (e) => {
     e.preventDefault();
     const post = { product, quantity, price, description, image, place, number };
-//SetIsPending is first set to true while the function is loading. When the data is posted it is set to false. History.push makes you return to the homepage
+
     SetIsPending(true);
     
     fetch('http://localhost:8000/posts', {
@@ -29,7 +29,7 @@ const handleSubmit = (e) => {
         console.log('Annons publicerad');
         SetIsPending(false);
         navigate("/BuyProducts");
-        alert("Din annons är publicerad");
+        alert("Din annons är publicerad!");
     })
 }
 
@@ -39,15 +39,17 @@ const handleSubmit = (e) => {
     return (  
 
 
-        <div className="create">
-            <div className="createForm">
+        <div className="sell-page">
+            <div className="sell-product">
 
 <form onSubmit={handleSubmit}>
+    <h1>Sälj din vara</h1>
+    <p>*Fyll i de följande vita fälten nedan med information om din produkt</p>
     <h2 className="header">Produktinformation</h2>
     <div>
-   <h3>Produkt</h3>
+   <h3>Typ av produkt</h3>
     <input 
-    type="text" className="inputField"
+    type="text" className="inputfield-product"
     required 
     value ={product}
     onChange={(e) => setProduct(e.target.value)}
@@ -57,7 +59,7 @@ const handleSubmit = (e) => {
     <div>
     <h3>Kvantitet</h3>
     <input 
-    type="text" className="inputField"
+    type="text" className="inputfield-quantity"
     required
      value ={quantity}
     onChange={(e) => setQuantity(e.target.value)}
@@ -67,7 +69,7 @@ const handleSubmit = (e) => {
     <div>
     <h3>Pris</h3>
     <input 
-    type="text" className="inputField"
+    type="text" className="inputfield-price"
     required
      value ={price}
     onChange={(e) => setPrice(e.target.value)}
@@ -78,7 +80,7 @@ const handleSubmit = (e) => {
     <div>
     <h3>Beskrivning</h3>
     <div>
-    <textarea required className="inputArea" rows="5" cols="30"
+    <textarea required className="input-area" rows="5" cols="30"
      value ={description}
     onChange={(e) => setDescription(e.target.value)}
     ></textarea>
@@ -88,7 +90,7 @@ const handleSubmit = (e) => {
 <div>
    <h3>Bild</h3>
     <input 
-    type="text" className="inputField"
+    type="text" className="inputfield-image"
     
     value ={image}
     onChange={(e) => setImage(e.target.value)}
@@ -99,7 +101,7 @@ const handleSubmit = (e) => {
 <div>
    <h3>Plats för upphämtning</h3>
     <input 
-    type="text" className="inputField"
+    type="text" className="inputfield-place"
     required 
     value ={place}
     onChange={(e) => setPlace(e.target.value)}
@@ -109,17 +111,19 @@ const handleSubmit = (e) => {
         <div>
    <h3>Telefonnummer</h3>
     <input 
-    type="number" className="inputField"
+    type="text" className="inputfield-number"
     required 
     value ={number}
     onChange={(e) => setNumber(e.target.value)}
     />
     
     </div>
+<div className="buttons">
 
+    { !isPending && <button className="publish-button">Annonsera</button>}
+    { isPending && <button className="publish-button" disabled>Annonserar..</button>}
 
-    { !isPending && <button className="edit">Annonsera</button>}
-    { isPending && <button className="edit" disabled>Annonserar..</button>}
+    </div>
 </form>
 
 </div>
@@ -128,63 +132,5 @@ const handleSubmit = (e) => {
      );
 }
 
-/*
-       <div className="product-detail-page">
-            <div className="pro-article">
-      
-            
-                <h1 className="header-details">Produktinformation</h1>
 
-              
-                <div className="product-detail">
-                <h2>Produkt</h2>
-                <input type="text" className="product-type" />
-                </div>
-
-                
-                <div className="product-detail">
-                <h2>Kvantité</h2>
-                <input type="text" name="quantity" className="product-quantity" />
-                </div>
-
-                
-                <div className="product-detail">
-                <h2>Pris</h2>
-                <input type="text" className="product-price" />
-                </div>
-
-            
-                <div className="product-detail">
-                <h2>Beskrivning</h2>
-                <input type="text" className="product-description" />
-                
-                </div>
-
-               
-                <div>
-             bild
-             </div>
-
-            <div className="product-detail">
-                <h2>Plats för upphämtning</h2>
-                <input type="text" className="product-place"/>
-
-            </div>
-
-            <div className="product-detail">
-
-                <h2>Telefon</h2>
-                <input type="text" className="product-phone"/>
-            </div>
-        
-            
-
-        
-        </div>
-    
-    
-        </div>
-    );
-}
- */
 export default SellProducts;
