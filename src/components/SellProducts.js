@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useNavigate } from 'react-router-dom';    
 import "../components/Styles/SellProducts.css";
 
+// using a usestate hook to update the value and the database with the new product
+
 const SellProducts = () => {
 
 const [product, setProduct] = useState('');

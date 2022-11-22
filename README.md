@@ -1,3 +1,10 @@
+This project was built based on a prototype for a schoolproject.
+It is a simple application built with React and a json server database.
+
+To run the json server, type in the following commando in the project directory:
+
+'npx json-server --watch data/db.json --port 8000'
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

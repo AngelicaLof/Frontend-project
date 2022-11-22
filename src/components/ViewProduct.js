@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import UseFetch from './UseFetch';
 import "../components/Styles/ViewProduct.css";
 
+//function that deletes a product from the database when you click the buy-button with handleclick
+
 const ViewProduct = () => {
 
 const { id } = useParams();

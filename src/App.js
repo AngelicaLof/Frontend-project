@@ -7,6 +7,7 @@ import SellProducts from "./components/SellProducts";
 import Navbar from "./components/Navbar";
 import ViewProduct from "./components/ViewProduct";
 import Confirmed from "./components/Confirmed";
+import Footer from "./components/Footer";
 
 
 
@@ -28,6 +29,7 @@ function App() {
         
         </Routes>
       </Router>
+      <Footer/>
     </div>
   );
 }

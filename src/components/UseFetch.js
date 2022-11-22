@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 
+// The useFetch function fetches the data with a url parameter. With the useState hook it updates the values of the data.
+
 const useFetch = (url) => {
      const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
